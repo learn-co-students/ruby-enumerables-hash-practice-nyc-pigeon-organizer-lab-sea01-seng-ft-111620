@@ -15,8 +15,13 @@ def nyc_pigeon_organizer(data)
   end
 
 
-
 =begin
+bird_hash = {}
+name_array.each do |counter|
+bird_hash[name][counter] = color[]
+bird_hash[name][counter] = gender[]
+bird_hash[name][counter] = lives[]
+
 My task is to go through this hash of hashes of arrays
 return the unique names
 create a new hash
