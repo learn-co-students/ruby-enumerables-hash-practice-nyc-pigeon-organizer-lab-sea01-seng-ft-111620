@@ -14,20 +14,6 @@ def nyc_pigeon_organizer(data)
     name_array = name_array.flatten.uniq
   end
 
-class Bird(name)
-
-  def initialize(, name)
-    @name = name_array[name]
-end
-
-  def color
-    color_hash = {:color => []}
-  color_data =  data.to_a
-    color_data.each do |general|
-      general[1].select (name)
-
-
-end
 
 
 =begin
