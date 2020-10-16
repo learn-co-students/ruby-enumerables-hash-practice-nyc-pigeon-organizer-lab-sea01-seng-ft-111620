@@ -1,16 +1,16 @@
 require 'pry'
 
 def nyc_pigeon_organizer(data)
-  data.each_with_object({}) do |(key, value), names_array|
+  data.each_with_object({}) do |(key, value), pigeon_list|
     value.each do |inner_key, names|
       names.each do |name|
-        if !names_array[name]
-          names_array[name] = {}
+        if !pigeon_list[name]
+          pigeon_list[name] = {}
         end
-        if !names_array[name][key]
-          names_array[name][key] = []
+        if !pigeon_list[name][key]
+          pigeon_list[name][key] = []
         end  
-        names_array[name][key].push(inner_key.to_s)
+        pigeon_list[name][key].push(inner_key.to_s)
       end  
     end  
   end  
